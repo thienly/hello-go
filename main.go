@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"flag"
+	"fmt"
+)
 
 func main() {
-	//comment
-	fmt.Println("hello")
+	var name string
+	flag.StringVar(&name, "n", "", "")
+	flag.Parse()
+	fmt.Println(name)
 }
