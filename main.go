@@ -1,13 +1,13 @@
 package main
 
 import (
-	"flag"
-	"fmt"
+	"log"
+	"time"
 )
 
 func main() {
-	var name string
-	flag.StringVar(&name, "n", "", "")
-	flag.Parse()
-	fmt.Println(name)
+	for {
+		time.Sleep(1 * time.Second)
+		log.Println("Hello world!!!")
+	}
 }
