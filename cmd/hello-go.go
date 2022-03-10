@@ -14,7 +14,7 @@ func main() {
 		name := flag.String("name", "hello world", "name description")
 		flag.Parse()
 		time.Sleep(1 * time.Second)
-		log.Println("Hello world!!!")
+		log.Println("Hello world 0.3.5!!!")
 		sigs := make(chan os.Signal)
 		signal.Notify(sigs, syscall.SIGQUIT)
 		go func() {
