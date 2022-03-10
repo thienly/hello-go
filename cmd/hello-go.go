@@ -11,10 +11,10 @@ import (
 
 func main() {
 	for {
-		name := flag.String("name", "hello world", "name description")
+		name := flag.String("name", "hello world 0.3.6", "name description")
 		flag.Parse()
 		time.Sleep(1 * time.Second)
-		log.Println("Hello world 0.3.5!!!")
+		log.Println("Hello world 0.3.6!!!")
 		sigs := make(chan os.Signal)
 		signal.Notify(sigs, syscall.SIGQUIT)
 		go func() {
